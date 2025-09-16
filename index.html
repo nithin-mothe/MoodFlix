@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodFlix</title>
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="moviereclogo.jpg" type="image/x-icon">
+  <style>
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="moviereclogo.jpg" alt="MovieRec Logo">
+      <h1>MoodFlix</h1>
+    </div>
+    <div class="navbar-right">
+      <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search movies..." onkeypress="if(event.key==='Enter'){searchMovies()}">
+    </div>
+    </div>
+  </div>
+
+  <!-- Category Buttons -->
+  <div class="categories">
+    <button onclick="setCategory('28')"><i class="fas fa-fist-raised"></i> Action</button>
+    <button onclick="setCategory('878')"><i class="fas fa-rocket"></i> Sci-Fi</button>
+    <button onclick="setCategory('35')"><i class="fas fa-laugh"></i> Comedy</button>
+    <button onclick="setCategory('53')"><i class="fas fa-ghost"></i> Thrilling</button>
+    <button onclick="setCategory('10749')"><i class="fas fa-heart"></i> Romantic</button>
+    <button onclick="setCategory('10749')"><i class="fas fa-kiss-wink-heart"></i> Love</button>
+    <button onclick="setCategory('27')"><i class="fas fa-skull-crossbones"></i> Horror</button>
+    <button onclick="setCategory('10751')"><i class="fas fa-users"></i> Friendship</button>
+    <button onclick="setCategory('36')"><i class="fas fa-landmark"></i> Mythology</button>
+    <button onclick="setCategory('99')"><i class="fas fa-film"></i> Commercial</button>
+    <button onclick="setCategory('18')"><i class="fas fa-pray"></i> Devotional</button>
+    <button onclick="setCategory('popular')"><i class="fas fa-fire"></i> Popular</button>
+    <button onclick="setCategory('top_rated')"><i class="fas fa-star"></i> Top Rated</button>
+    <button onclick="setCategory('upcoming')"><i class="fas fa-calendar-alt"></i> Upcoming</button>
+    <button onclick="setCategory('now_playing')"><i class="fas fa-play-circle"></i> Now Playing</button>
+  </div>
+
+  <!-- Movies -->
+  <div class="movies" id="movies"></div>
+  <button id="loadMore" onclick="loadMore()">Load More</button>
+
+  <!-- Modal -->
+  <div class="modal" id="movieModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+  <footer style="text-align: center; padding: 20px; color: #777;">
+    &copy; 2025 NITHIN MOTHE & BUNNY MoodFlix. All rights reserved. </footer>
+
+  <script>
+    
+  </script>
+</body>
+</html>
